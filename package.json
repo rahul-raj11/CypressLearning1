@@ -1,0 +1,17 @@
+{
+  "name": "cypresstestautomation",
+  "version": "1.0.0",
+  "description": "Cypress Test Automation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:open": "cypress open"
+  },
+  "author": "Rahul Raj",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^10.3.0",
+    "cypress-mochawesome-reporter": "^3.2.0",
+    "cypress-xpath": "^2.0.0"
+  }
+}
