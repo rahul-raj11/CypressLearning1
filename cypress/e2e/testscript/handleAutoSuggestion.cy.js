@@ -1,7 +1,9 @@
 describe("Handle Auto Suggestion", () => {
-  it("Select value from google auto suggestion", () => {
+  beforeEach(() => {
     cy.visit("https://www.google.com/");
+  });
 
+  it("Select value from google auto suggestion", () => {
     cy.get("input[name='q']").type("data structures");
     cy.wait(4000);
 

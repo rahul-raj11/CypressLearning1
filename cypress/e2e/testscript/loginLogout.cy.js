@@ -1,9 +1,11 @@
 /// <reference types="cypress-xpath" />
 
 describe("OrangeHRM Login Logout Suite", function () {
-  it("Login and Logout", function () {
-    cy.visit("/");
+  this.beforeEach(() => {
+    cy.visit("https://opensource-demo.orangehrmlive.com/");
+  });
 
+  it("Login and Logout", function () {
     cy.xpath("//input[@id='txtUsername']")
       .type("Admin")
       .should("have.value", "Admin");
